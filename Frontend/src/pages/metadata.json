@@ -1,0 +1,42 @@
+{
+  "index": {
+    "title": "6G Clothing | Wear Your Story",
+    "bodyClass": "bg-white text-ink"
+  },
+  "tshirts": {
+    "title": "T-Shirts | 6G Clothing",
+    "bodyClass": ""
+  },
+  "collections": {
+    "title": "Collections | 6G Clothing",
+    "bodyClass": ""
+  },
+  "about": {
+    "title": "About 6G Clothing | Wear Your Story",
+    "bodyClass": ""
+  },
+  "contact": {
+    "title": "Contact 6G Clothing | Wear Your Story",
+    "bodyClass": ""
+  },
+  "product": {
+    "title": "Wave Graphic Tee | 6G Clothing",
+    "bodyClass": ""
+  },
+  "cart": {
+    "title": "Your Cart | 6G Clothing",
+    "bodyClass": ""
+  },
+  "wishlist": {
+    "title": "Wishlist | 6G Clothing",
+    "bodyClass": ""
+  },
+  "login": {
+    "title": "Login | 6G Clothing",
+    "bodyClass": ""
+  },
+  "account": {
+    "title": "My Account | 6G Clothing",
+    "bodyClass": ""
+  }
+}

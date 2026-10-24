@@ -1,0 +1,894 @@
+/* =========================================================
+   COLLECTIONS PAGE
+   6G CLOTHING
+   ========================================================= */
+
+.collections-page { background: #f8fafb; color: #071018; }
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.collections-hero {
+  min-height: 480px;
+  display: grid;
+  align-items: center;
+  background: linear-gradient(105deg,#f8fafb 0%,#edf1f3 58%,#dfe6ea 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Dark gradient overlay so text is always readable over the image */
+.collections-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(7, 16, 24, 0.60) 0%,
+    rgba(7, 16, 24, 0.30) 55%,
+    rgba(7, 16, 24, 0.05) 100%
+  );
+  pointer-events: none;
+}
+
+/* Force text white when hero has a real image */
+.collections-hero:has(.collections-hero-overlay) .collections-hero-copy,
+.collections-hero:has(.collections-hero-overlay) .eyebrow,
+.collections-hero:has(.collections-hero-overlay) h1,
+.collections-hero:has(.collections-hero-overlay) p,
+.collections-hero:has(.collections-hero-overlay) .hero-perks span {
+  color: #fff;
+}
+
+.collections-hero:has(.collections-hero-overlay) h1 span { color: #ff4d5a; }
+
+.collections-hero:has(.collections-hero-overlay) .hero-perks span {
+  border-right-color: rgba(255,255,255,.3);
+}
+
+.collections-hero:has(.collections-hero-overlay) .hero-perks img {
+  filter: brightness(0) invert(1);
+}
+
+.collections-hero-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  padding: 56px 0 46px 74px;
+}
+
+.collections-hero .eyebrow,
+.collections-head .eyebrow,
+.premium-copy .eyebrow,
+.promo .eyebrow {
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.collections-hero h1 {
+  margin: 0;
+  font-size: clamp(58px,7vw,92px);
+  line-height: .9;
+  font-weight: 950;
+}
+
+.collections-hero h1 span,
+.collections-head h2 span { color: #e81322; }
+
+.collections-hero-copy > p:not(.eyebrow) {
+  max-width: 430px;
+  margin: 20px 0 24px;
+  color: #202a32;
+  font-size: 18px;
+  line-height: 1.36;
+  font-weight: 650;
+}
+
+.hero-btn {
+  min-width: 190px;
+  height: 54px;
+  padding: 0 26px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #050b10;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.hero-perks { display: flex; gap: 28px; margin-top: 36px; }
+
+.hero-perks span {
+  min-width: 100px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.05;
+  font-weight: 950;
+  border-right: 1px solid #cbd3d8;
+}
+
+.hero-perks span:last-child { border-right: 0; }
+.hero-perks img { width: 25px; height: 25px; }
+
+
+/* =========================================================
+   COLLECTIONS LIST SECTION
+   ========================================================= */
+
+.collections-list {
+  padding: 48px 52px 36px;
+  background: #f8fafb;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.collections-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+/* Left side */
+.ch-left {}
+
+.ch-left .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e81322;
+  letter-spacing: 5px;
+  font-size: 11px;
+  font-weight: 950;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.collections-head h2 {
+  margin: 0 0 8px;
+  font-size: clamp(36px, 3.6vw, 50px);
+  line-height: .95;
+  font-weight: 950;
+  letter-spacing: -1px;
+}
+
+.ch-desc {
+  margin: 0;
+  max-width: 500px;
+  color: #53606a;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Right side */
+.ch-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+}
+
+.wear-script-text {
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: 32px;
+  line-height: .88;
+  color: #071018;
+  transform: rotate(-8deg);
+  margin: 0;
+  position: relative;
+}
+
+.wear-script-text::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: #e81322;
+  border-radius: 99px;
+  margin: 8px 0 0 8px;
+  transform: rotate(-6deg);
+}
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 22px;
+  border: 2px solid #071018;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 900;
+  color: #071018;
+  white-space: nowrap;
+  transition: background .2s, color .2s;
+}
+
+.view-all-btn:hover {
+  background: #071018;
+  color: #fff;
+}
+
+.brand-watermark {
+  font-size: 38px;
+  font-weight: 950;
+  line-height: .85;
+  letter-spacing: -2px;
+  color: rgba(7,16,24,.07);
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.brand-watermark small {
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-weight: 800;
+  display: block;
+  margin-top: 2px;
+}
+
+
+/* =========================================================
+   COLLECTION GRID
+   ========================================================= */
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+
+/* =========================================================
+   COLLECTION CARD  —  Premium split-panel design
+   ========================================================= */
+
+.collection-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  min-height: 170px;
+  border: 1px solid rgba(0,0,0,.07);
+  box-shadow: 0 2px 12px rgba(7,16,24,.07);
+  background: #fff;
+  transition: transform .22s ease, box-shadow .22s ease;
+  cursor: pointer;
+}
+
+.collection-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(7,16,24,.14);
+}
+
+/* Number badge — top right of text panel */
+.collection-card::before {
+  content: attr(data-num);
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 22px;
+  font-weight: 950;
+  letter-spacing: -1.5px;
+  color: rgba(0,0,0,.08);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 2;
+}
+
+
+/* ---- IMAGE PANEL (left column) ---- */
+
+.cc-img-wrap {
+  position: relative;
+  width: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;      /* keeps image inside the panel */
+  flex-shrink: 0;
+  align-self: stretch;   /* full card height */
+}
+
+/* coloured panel background per variant — set via card class */
+.cc-dark     .cc-img-wrap { background: linear-gradient(160deg, #1a1e26 0%, #2e333d 100%); }
+.cc-cream    .cc-img-wrap { background: linear-gradient(160deg, #f7e9cf 0%, #eedbb0 100%); }
+.cc-mint     .cc-img-wrap { background: linear-gradient(160deg, #cff0e1 0%, #b0e4cc 100%); }
+.cc-charcoal .cc-img-wrap { background: linear-gradient(160deg, #2a2e36 0%, #3d424d 100%); }
+.cc-gold     .cc-img-wrap { background: linear-gradient(160deg, #fde6a0 0%, #f8d06e 100%); }
+.cc-rose     .cc-img-wrap { background: linear-gradient(160deg, #ffd6df 0%, #f9b8c8 100%); }
+.cc-silver   .cc-img-wrap { background: linear-gradient(160deg, #1e2228 0%, #31363f 100%); }
+
+/* decorative circle behind tshirt */
+.cc-img-wrap::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.09);
+  bottom: -20px;
+  left: -20px;
+  pointer-events: none;
+}
+
+.cc-tshirt {
+  /* Fill the whole panel — no cropping, no overflow */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;        /* full image always visible */
+  object-position: center;
+  padding: 12px 10px;         /* breathing room inside the panel */
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.22));
+  transition: transform .28s ease, filter .28s ease;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Hide broken image icon while src is empty */
+.cc-tshirt:not([src]),
+.cc-tshirt[src=""] {
+  display: none;
+}
+
+.collection-card:hover .cc-tshirt {
+  /* Gentle zoom — stays within the panel because overflow:hidden is on wrap */
+  transform: scale(1.08);
+  filter: drop-shadow(0 10px 22px rgba(0,0,0,.30));
+}
+
+/* Light-background cards — use a black tshirt silhouette style */
+.cc-tshirt-light {
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.15));
+}
+
+
+/* ---- CONTENT PANEL (right column) ---- */
+
+.cc-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  padding: 16px 44px 16px 14px;
+  background: #fff;
+}
+
+.cc-body h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 950;
+  line-height: 1.15;
+  letter-spacing: -.3px;
+  color: #071018;
+}
+
+.cc-sub {
+  margin: 3px 0 0;
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: #7a8590;
+  font-weight: 700;
+}
+
+.cc-count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #3d4a54;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #edf0f2;
+}
+
+.cc-count svg {
+  opacity: .6;
+  flex-shrink: 0;
+}
+
+
+/* ---- RED ARROW BUTTON ---- */
+
+.cc-arrow {
+  position: absolute;
+  bottom: 14px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e81322;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(232,19,34,.35);
+  transition: background .18s, transform .18s, box-shadow .18s;
+  z-index: 3;
+}
+
+.cc-arrow:hover {
+  background: #c0000e;
+  transform: scale(1.12);
+  box-shadow: 0 6px 18px rgba(192,0,14,.45);
+}
+
+
+/* =========================================================
+   CARD COLOUR VARIANTS  (card border accent line)
+   ========================================================= */
+
+/* left accent stripe via box-shadow inset on img panel */
+.cc-dark     { border-color: rgba(0,0,0,.12); }
+.cc-cream    { border-color: rgba(238,219,176,.6); }
+.cc-mint     { border-color: rgba(176,228,204,.6); }
+.cc-charcoal { border-color: rgba(0,0,0,.12); }
+.cc-gold     { border-color: rgba(248,208,110,.6); }
+.cc-rose     { border-color: rgba(249,184,200,.6); }
+.cc-silver   { border-color: rgba(0,0,0,.12); }
+
+/* Dark-card number badge — lighter text */
+.cc-dark::before,
+.cc-charcoal::before,
+.cc-silver::before { color: rgba(0,0,0,.10); }
+
+/* Subtle left-edge coloured stripe */
+.collection-card::after {
+  content: "";
+  position: absolute;
+  left: 112px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(0,0,0,.07);
+  pointer-events: none;
+}
+
+
+
+/* =========================================================
+   PREMIUM BAND  —  Light warm redesign
+   ========================================================= */
+
+.premium-band {
+  margin: 0 52px 36px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fffaf6 0%, #fff5ee 40%, #fef0f0 100%);
+  border: 1px solid #f0e4da;
+  box-shadow:
+    0 2px 0 #fff inset,
+    0 8px 40px rgba(232,19,34,.06);
+  position: relative;
+}
+
+/* Decorative CSS-only rings — soft, light */
+.pb-ring {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  border: 1px solid rgba(232,19,34,.08);
+}
+.pb-ring-1 {
+  width: 340px; height: 340px;
+  top: -120px; right: 320px;
+  background: radial-gradient(circle, rgba(232,19,34,.04) 0%, transparent 70%);
+}
+.pb-ring-2 {
+  width: 200px; height: 200px;
+  bottom: -60px; right: 130px;
+  border-color: rgba(232,19,34,.06);
+  background: transparent;
+}
+
+/* Inner flex layout */
+.pb-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 0;
+  padding: 42px 48px;
+}
+
+/* ---- Copy ---- */
+.pb-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-right: 48px;
+  border-right: 1px solid #f0e0d6;
+}
+
+.pb-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #e81322;
+  margin: 0 0 12px;
+}
+
+.pb-dash {
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background: #e81322;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.pb-heading {
+  margin: 0 0 10px;
+  font-size: clamp(32px, 2.8vw, 44px);
+  font-weight: 950;
+  line-height: .95;
+  letter-spacing: -1.5px;
+  color: #071018;
+}
+
+.pb-heading em {
+  font-style: normal;
+  color: #e81322;
+}
+
+.pb-desc {
+  margin: 0 0 22px;
+  color: #6a7680;
+  font-size: 13.5px;
+  line-height: 1.65;
+  max-width: 340px;
+}
+
+.pb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 8px;
+  background: #071018;
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 900;
+  width: fit-content;
+  transition: background .18s, transform .18s, box-shadow .18s;
+  box-shadow: 0 4px 16px rgba(7,16,24,.18);
+}
+
+.pb-btn:hover {
+  background: #e81322;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(232,19,34,.28);
+}
+
+/* ---- Color palette ---- */
+.pb-palette {
+  padding: 0 48px;
+  border-right: 1px solid #f0e0d6;
+}
+
+.pb-palette-label {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #aab0b6;
+  margin-bottom: 14px;
+}
+
+/* Horizontal rows of color swatches */
+.pb-color-fan {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 7px;
+}
+
+.pbc {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--c);
+  box-shadow: 0 2px 6px rgba(0,0,0,.14);
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease;
+  font-size: 0; /* hide label text visually */
+  border: var(--border, none);
+  position: relative;
+}
+
+.pbc:hover {
+  transform: translateY(-4px) scale(1.12);
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+  z-index: 2;
+}
+
+/* ---- Stats ---- */
+.pb-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 48px;
+}
+
+.pb-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 11px 0;
+  border-bottom: 1px solid #f0e0d6;
+}
+
+.pb-stat:last-child { border-bottom: 0; }
+
+.pb-stat strong {
+  font-size: 26px;
+  font-weight: 950;
+  letter-spacing: -1px;
+  color: #071018;
+  line-height: 1;
+}
+
+.pb-stat span {
+  font-size: 10.5px;
+  font-weight: 800;
+  color: #9aa3aa;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   COLOUR SHOP
+   ========================================================= */
+
+.color-shop { padding: 0 52px 30px; }
+.color-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 16px; }
+.color-head h2 { margin: 0; text-transform: uppercase; font-size: 25px; font-weight: 950; }
+.color-head a { font-size: 13px; font-weight: 950; }
+.color-row { display: grid; grid-template-columns: repeat(14,1fr); gap: 18px; }
+.color-row button { border: 0; background: transparent; display: grid; justify-items: center; gap: 10px; color: #202a32; font-size: 11px; font-weight: 800; cursor: pointer; }
+.color-row span { width: 58px; height: 58px; border-radius: 50%; border: 1px solid #d6dee4; box-shadow: 0 8px 18px rgba(7,16,24,.12); }
+
+
+/* =========================================================
+   PROMO GRID
+   ========================================================= */
+
+.promo-grid { padding: 0 52px 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.promo {
+  min-height: 240px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Image overlay — darkens the background image for text readability */
+.promo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(180, 0, 10, 0.72) 0%,
+    rgba(90, 0, 5, 0.50) 100%
+  );
+  pointer-events: none;
+}
+
+/* Light overlay for the minimal card */
+.promo-overlay-light {
+  background: linear-gradient(
+    160deg,
+    rgba(10, 15, 25, 0.60) 0%,
+    rgba(10, 15, 25, 0.30) 100%
+  );
+}
+
+/* Fallback solid background if no image loaded */
+.red-promo { background-color: #e51521; color: #fff; }
+.minimal-promo { background-color: #1c2028; color: #fff; }
+
+/* Content sits above overlay */
+.promo-content {
+  position: relative;
+  z-index: 1;
+  padding: 28px 32px;
+  color: #fff;
+  width: 100%;
+}
+
+.promo-content .eyebrow {
+  color: rgba(255,255,255,.7);
+  letter-spacing: 4px;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.promo-content h2 {
+  margin: 0 0 18px;
+  font-size: clamp(26px, 2.6vw, 38px);
+  line-height: .95;
+  font-weight: 950;
+  color: #fff;
+}
+
+.promo-content a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.92);
+  color: #071018;
+  font-size: 13px;
+  font-weight: 950;
+  transition: background .18s, transform .18s;
+}
+
+.promo-content a:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   COMMUNITY
+   ========================================================= */
+
+.collection-community {
+  min-height: 180px;
+  padding: 28px 56px;
+  display: grid;
+  grid-template-columns: 48% 1fr;
+  gap: 28px;
+  align-items: center;
+  background: radial-gradient(circle at 16% 22%,rgba(255,255,255,.2),transparent 18%), #071018;
+  color: #fff;
+  overflow: hidden;
+}
+
+.community-script { font-family: "Brush Script MT","Segoe Script",cursive; font-size: 48px; line-height: .9; transform: rotate(-9deg); justify-self: center; color: #fff; }
+.collection-community h2 { margin: 0; font-size: 29px; font-weight: 950; }
+.collection-community p { margin: 8px 0 18px; color: #d9e0e3; font-size: 13px; }
+.collection-community form { display: grid; grid-template-columns: 1fr 170px; max-width: 560px; height: 48px; }
+.collection-community input { min-width: 0; border: 0; border-radius: 6px 0 0 6px; padding: 0 22px; font-size: 13px; }
+.collection-community button { border: 0; border-radius: 0 6px 6px 0; background: #ed101f; color: #fff; font-size: 13px; font-weight: 950; cursor: pointer; }
+
+
+/* =========================================================
+   TABLET  ≤ 1180px
+   ========================================================= */
+
+@media (max-width: 1180px) {
+  .collection-grid { grid-template-columns: repeat(2, 1fr); }
+  .premium-band { margin: 0 28px 36px; }
+  .pb-inner { grid-template-columns: 1fr; gap: 32px; }
+  .pb-copy { border-right: 0; border-bottom: 1px solid #f0e0d6; padding-right: 0; padding-bottom: 32px; }
+  .pb-palette { border-right: 0; border-bottom: 1px solid #f0e0d6; padding: 0 0 32px; }
+  .pb-stats { flex-direction: row; gap: 0; padding-left: 0; }
+  .pb-stat { flex: 1; border-bottom: 0; border-right: 1px solid #f0e0d6; padding: 0 20px; text-align: center; }
+  .pb-stat:first-child { padding-left: 0; }
+  .pb-stat:last-child { border-right: 0; }
+  .color-row { grid-template-columns: repeat(7,1fr); }
+  .ch-right { gap: 16px; }
+  .brand-watermark { display: none; }
+  .collections-list { padding: 36px 28px 24px; }
+  .color-shop { padding: 0 28px 24px; }
+  .promo-grid { padding: 0 28px 24px; }
+  .collection-community { padding: 24px 36px; }
+}
+/* ── Mid tablet ≤900px ────────────────────────────── */
+@media (max-width: 900px) {
+  .collections-hero-copy { padding: 42px 0 36px 40px; }
+  .collections-hero h1 { font-size: clamp(50px, 7.5vw, 78px); }
+  .collections-hero-copy > p:not(.eyebrow) { font-size: 16px; }
+  .hero-perks { flex-wrap: wrap; gap: 16px; }
+  .hero-perks span { min-width: 0; flex: 1 1 calc(50% - 8px); border-right: 0; padding-right: 0; border-bottom: 1px solid #cbd3d8; padding-bottom: 10px; }
+  .hero-perks span:last-child { border-bottom: 0; }
+  .collections-list { padding: 28px 22px 20px; }
+  .collection-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .pb-color-fan { grid-template-columns: repeat(6, 1fr); }
+  .color-row { grid-template-columns: repeat(5, 1fr); gap: 12px; }
+  .color-row span { width: 48px; height: 48px; }
+  .promo-grid { padding: 0 22px 24px; }
+  .color-shop { padding: 0 22px 20px; }
+  .collection-community { padding: 24px 28px; }
+  .community-script { font-size: 36px; }
+}
+
+
+/* =========================================================
+   MOBILE  ≤ 720px
+   ========================================================= */
+
+@media (max-width: 720px) {
+  .collections-hero { min-height: 400px; }
+  .collections-hero-copy { padding: 36px 20px 30px; }
+  .collections-hero h1 { font-size: clamp(44px, 12vw, 60px); }
+  .hero-perks { flex-direction: column; align-items: flex-start; gap: 12px; margin-top: 22px; }
+  .hero-perks span { border-right: 0; border-bottom: 1px solid rgba(203,211,216,.6); padding-bottom: 10px; min-width: 0; width: 100%; }
+  .hero-perks span:last-child { border-bottom: 0; }
+
+  .collections-list { padding: 26px 16px 20px; }
+  .collections-head { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .ch-right { width: 100%; justify-content: space-between; }
+  .wear-script-text { font-size: 22px; }
+
+  .collection-grid { grid-template-columns: 1fr; }
+  .collection-card {
+    grid-template-columns: 90px 1fr;
+    min-height: 120px;
+  }
+  .cc-img-wrap { width: 90px; }
+  .collection-card::after { left: 90px; }
+
+  .premium-band { margin-left: 16px; margin-right: 16px; }
+  .pb-inner { padding: 28px 22px; }
+  .pb-stats { flex-direction: column; gap: 0; }
+  .pb-stat { border-right: 0; border-bottom: 1px solid #f0e0d6; padding: 12px 0; text-align: left; }
+  .pb-stat:last-child { border-bottom: 0; }
+  .pb-color-fan { grid-template-columns: repeat(5, 1fr); }
+
+  .color-shop { padding-left: 16px; padding-right: 16px; }
+  .color-row { grid-template-columns: repeat(4,1fr); gap: 10px; }
+  .color-row span { width: 46px; height: 46px; }
+  .color-head { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .color-head h2 { font-size: 20px; }
+
+  .promo-grid { padding: 0 16px 24px; grid-template-columns: 1fr; }
+  .promo { min-height: 200px; }
+  .promo-content { padding: 20px 24px; }
+  .promo-content h2 { font-size: clamp(22px, 5.5vw, 30px); }
+
+  .collection-community { padding: 24px 16px; grid-template-columns: 1fr; gap: 16px; }
+  .community-script { display: none; }
+  .collection-community form { grid-template-columns: 1fr; height: auto; gap: 10px; }
+  .collection-community input,
+  .collection-community button { height: 46px; border-radius: 6px; }
+}
+/* ── Small mobile ≤480px ──────────────────────────── */
+@media (max-width: 480px) {
+  .collections-hero { min-height: 360px; }
+  .collections-hero h1 { font-size: 40px; }
+  .hero-btn { min-width: 0; width: 100%; }
+  .collection-card { grid-template-columns: 80px 1fr; min-height: 110px; }
+  .cc-img-wrap { width: 80px; }
+  .collection-card::after { left: 80px; }
+  .pb-color-fan { grid-template-columns: repeat(4, 1fr); }
+  .color-row { grid-template-columns: repeat(3, 1fr); }
+}
+/* ── Very small ≤360px ────────────────────────────── */
+@media (max-width: 360px) {
+  .collections-hero-copy { padding: 28px 14px 24px; }
+  .collections-hero h1 { font-size: 34px; }
+  .collections-list { padding: 20px 12px 16px; }
+  .promo-grid, .color-shop, .premium-band { margin-left: 12px; margin-right: 12px; padding-left: 0; padding-right: 0; }
+}

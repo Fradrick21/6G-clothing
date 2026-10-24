@@ -1,0 +1,669 @@
+[
+  {
+    "id": "classic-logo-tee",
+    "name": "Classic Logo Tee",
+    "price": 699,
+    "mrp": 899,
+    "category": "Minimal",
+    "fit": "Regular Fit",
+    "colors": [
+      "Black",
+      "White",
+      "Grey",
+      "Red"
+    ],
+    "color": "Black",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "size": "L",
+    "fabric": "100% Cotton",
+    "printType": "Minimal",
+    "inStock": true,
+    "rating": 4.8,
+    "reviews": 124,
+    "badge": "Best Seller",
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#05080c",
+      "#f5f5f1",
+      "#c9ced1",
+      "#ed1825"
+    ],
+    "copy": "Clean everyday logo tee in soft cotton."
+  },
+  {
+    "id": "wave-graphic-tee",
+    "name": "Wave Graphic Tee",
+    "price": 799,
+    "mrp": 1199,
+    "category": "Graphic",
+    "fit": "Regular Fit",
+    "colors": [
+      "Black",
+      "White",
+      "Blue",
+      "Green"
+    ],
+    "color": "Black",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "size": "M",
+    "fabric": "Premium Cotton",
+    "printType": "Graphic Print",
+    "inStock": true,
+    "rating": 4.7,
+    "reviews": 86,
+    "badge": "New",
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#111820",
+      "#fff",
+      "#096bd5",
+      "#0b7248"
+    ],
+    "copy": "A minimal wave graphic for easy streetwear days."
+  },
+  {
+    "id": "minimal-text-tee",
+    "name": "Minimal Text Tee",
+    "price": 749,
+    "mrp": 999,
+    "category": "Typography",
+    "fit": "Regular Fit",
+    "colors": [
+      "Beige",
+      "Brown",
+      "Black",
+      "White"
+    ],
+    "color": "Beige",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "size": "M",
+    "fabric": "Organic Cotton",
+    "printType": "Typography",
+    "inStock": true,
+    "rating": 4.9,
+    "reviews": 210,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#e4d2b8",
+      "#584035",
+      "#111",
+      "#fff"
+    ],
+    "copy": "Sharp typography on premium cotton."
+  },
+  {
+    "id": "good-vibes-tee",
+    "name": "Good Vibes Tee",
+    "price": 699,
+    "mrp": 899,
+    "category": "Typography",
+    "fit": "Oversized",
+    "colors": [
+      "Red",
+      "Black",
+      "Yellow",
+      "Blue"
+    ],
+    "color": "Red",
+    "sizes": [
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "size": "XL",
+    "fabric": "Cotton Blend",
+    "printType": "Typography",
+    "inStock": true,
+    "rating": 4.8,
+    "reviews": 68,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#d80d19",
+      "#111",
+      "#ffba0a",
+      "#1c6edf"
+    ],
+    "copy": "Positive print, relaxed shape, everyday comfort."
+  },
+  {
+    "id": "nature-graphic-tee",
+    "name": "Nature Graphic Tee",
+    "price": 799,
+    "mrp": 999,
+    "category": "Graphic",
+    "fit": "Oversized",
+    "colors": [
+      "Green",
+      "Blue",
+      "White"
+    ],
+    "color": "Green",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "size": "L",
+    "fabric": "100% Cotton",
+    "printType": "Graphic Print",
+    "inStock": true,
+    "rating": 4.7,
+    "reviews": 56,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#062",
+      "#164",
+      "#346",
+      "#eee"
+    ],
+    "copy": "Earthy tones with a calm graphic finish."
+  },
+  {
+    "id": "typography-tee",
+    "name": "Typography Tee",
+    "price": 749,
+    "mrp": 999,
+    "category": "Typography",
+    "fit": "Regular Fit",
+    "colors": [
+      "Black",
+      "Purple",
+      "Pink",
+      "Yellow"
+    ],
+    "color": "Purple",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "size": "M",
+    "fabric": "Premium Cotton",
+    "printType": "Typography",
+    "inStock": false,
+    "rating": 4.8,
+    "reviews": 143,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#06101c",
+      "#8753d9",
+      "#d9a8ef",
+      "#ffc20c"
+    ],
+    "copy": "A bold type-led tee with a clean profile."
+  },
+  {
+    "id": "anime-street-tee",
+    "name": "Anime Street Tee",
+    "price": 799,
+    "mrp": 1099,
+    "category": "Anime",
+    "fit": "Oversized",
+    "colors": [
+      "Black",
+      "Red",
+      "Yellow",
+      "White"
+    ],
+    "color": "Black",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "size": "L",
+    "fabric": "Cotton Blend",
+    "printType": "Graphic Print",
+    "inStock": true,
+    "rating": 4.9,
+    "reviews": 92,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#000",
+      "#ed101f",
+      "#ffc20c",
+      "#eee"
+    ],
+    "copy": "Street fit with anime-inspired energy."
+  },
+  {
+    "id": "oversized-basic-tee",
+    "name": "Oversized Basic Tee",
+    "price": 599,
+    "mrp": 799,
+    "category": "Solid Colors",
+    "fit": "Oversized",
+    "colors": [
+      "Yellow",
+      "Orange",
+      "Grey"
+    ],
+    "color": "Yellow",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "size": "XL",
+    "fabric": "Organic Cotton",
+    "printType": "Solid",
+    "inStock": true,
+    "rating": 4.6,
+    "reviews": 88,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#ffc20c",
+      "#ff7132",
+      "#aaa"
+    ],
+    "copy": "A roomy solid tee built for repeat wear."
+  },
+  {
+    "id": "midnight-basic-tee",
+    "name": "Midnight Basic Tee",
+    "price": 649,
+    "mrp": 899,
+    "category": "Solid Colors",
+    "fit": "Regular Fit",
+    "colors": [
+      "Black",
+      "Grey",
+      "White"
+    ],
+    "color": "Black",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "size": "M",
+    "fabric": "100% Cotton",
+    "printType": "Solid",
+    "inStock": true,
+    "rating": 4.7,
+    "reviews": 74,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#05080c",
+      "#70757b",
+      "#fff"
+    ],
+    "copy": "Everyday solid tee with a clean finish."
+  },
+  {
+    "id": "sunset-type-tee",
+    "name": "Sunset Type Tee",
+    "price": 749,
+    "mrp": 999,
+    "category": "Typography",
+    "fit": "Oversized",
+    "colors": [
+      "Orange",
+      "Yellow",
+      "Black"
+    ],
+    "color": "Orange",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "size": "L",
+    "fabric": "Cotton Blend",
+    "printType": "Typography",
+    "inStock": true,
+    "rating": 4.6,
+    "reviews": 63,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#ff7132",
+      "#ffc20c",
+      "#111"
+    ],
+    "copy": "Warm type print in an easy relaxed fit."
+  },
+  {
+    "id": "clean-white-tee",
+    "name": "Clean White Tee",
+    "price": 599,
+    "mrp": 799,
+    "category": "Minimal",
+    "fit": "Regular Fit",
+    "colors": [
+      "White",
+      "Grey",
+      "Blue"
+    ],
+    "color": "White",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "size": "M",
+    "fabric": "Organic Cotton",
+    "printType": "Minimal",
+    "inStock": true,
+    "rating": 4.8,
+    "reviews": 132,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#fff",
+      "#c9ced1",
+      "#126ee7"
+    ],
+    "copy": "Crisp minimal tee for simple styling."
+  },
+  {
+    "id": "manga-panel-tee",
+    "name": "Manga Panel Tee",
+    "price": 849,
+    "mrp": 1199,
+    "category": "Anime",
+    "fit": "Oversized",
+    "colors": [
+      "White",
+      "Black",
+      "Red"
+    ],
+    "color": "White",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "size": "L",
+    "fabric": "Premium Cotton",
+    "printType": "Graphic Print",
+    "inStock": true,
+    "rating": 4.9,
+    "reviews": 118,
+    "badge": "New",
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#fff",
+      "#111",
+      "#ed101f"
+    ],
+    "copy": "Anime-inspired panel art on premium cotton."
+  },
+  {
+    "id": "olive-core-tee",
+    "name": "Olive Core Tee",
+    "price": 699,
+    "mrp": 949,
+    "category": "Solid Colors",
+    "fit": "Regular Fit",
+    "colors": [
+      "Green",
+      "Brown",
+      "Black"
+    ],
+    "color": "Green",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "size": "L",
+    "fabric": "100% Cotton",
+    "printType": "Solid",
+    "inStock": true,
+    "rating": 4.7,
+    "reviews": 81,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#098247",
+      "#8d634b",
+      "#111"
+    ],
+    "copy": "Muted solid tee for daily rotation."
+  },
+  {
+    "id": "retro-wave-tee",
+    "name": "Retro Wave Tee",
+    "price": 799,
+    "mrp": 1099,
+    "category": "Graphic",
+    "fit": "Regular Fit",
+    "colors": [
+      "Purple",
+      "Pink",
+      "Black"
+    ],
+    "color": "Purple",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "size": "M",
+    "fabric": "Cotton Blend",
+    "printType": "Graphic Print",
+    "inStock": true,
+    "rating": 4.8,
+    "reviews": 96,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#7837d7",
+      "#ff85a8",
+      "#111"
+    ],
+    "copy": "Retro graphic energy with a modern fit."
+  },
+  {
+    "id": "beige-pocket-tee",
+    "name": "Beige Pocket Tee",
+    "price": 699,
+    "mrp": 899,
+    "category": "Minimal",
+    "fit": "Regular Fit",
+    "colors": [
+      "Beige",
+      "Brown",
+      "White"
+    ],
+    "color": "Beige",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "size": "M",
+    "fabric": "Organic Cotton",
+    "printType": "Minimal",
+    "inStock": false,
+    "rating": 4.5,
+    "reviews": 49,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#e4d2b8",
+      "#584035",
+      "#fff"
+    ],
+    "copy": "Soft neutral tee with pocket detail."
+  },
+  {
+    "id": "blue-motion-tee",
+    "name": "Blue Motion Tee",
+    "price": 799,
+    "mrp": 999,
+    "category": "Graphic",
+    "fit": "Oversized",
+    "colors": [
+      "Blue",
+      "White",
+      "Grey"
+    ],
+    "color": "Blue",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "size": "XL",
+    "fabric": "Premium Cotton",
+    "printType": "Graphic Print",
+    "inStock": true,
+    "rating": 4.7,
+    "reviews": 77,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#126ee7",
+      "#fff",
+      "#999"
+    ],
+    "copy": "Fluid graphic tee with a relaxed street fit."
+  },
+  {
+    "id": "red-statement-tee",
+    "name": "Red Statement Tee",
+    "price": 749,
+    "mrp": 999,
+    "category": "Typography",
+    "fit": "Oversized",
+    "colors": [
+      "Red",
+      "Black",
+      "White"
+    ],
+    "color": "Red",
+    "sizes": [
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "size": "XL",
+    "fabric": "100% Cotton",
+    "printType": "Typography",
+    "inStock": true,
+    "rating": 4.8,
+    "reviews": 102,
+    "badge": "Best Seller",
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#ed101f",
+      "#111",
+      "#fff"
+    ],
+    "copy": "Bold statement print with a roomy shape."
+  },
+  {
+    "id": "soft-pink-tee",
+    "name": "Soft Pink Tee",
+    "price": 649,
+    "mrp": 899,
+    "category": "Solid Colors",
+    "fit": "Regular Fit",
+    "colors": [
+      "Pink",
+      "White",
+      "Grey"
+    ],
+    "color": "Pink",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "size": "S",
+    "fabric": "Organic Cotton",
+    "printType": "Solid",
+    "inStock": true,
+    "rating": 4.6,
+    "reviews": 58,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#ff85a8",
+      "#fff",
+      "#aaa"
+    ],
+    "copy": "Soft color tee for easy everyday outfits."
+  },
+  {
+    "id": "shadow-minimal-tee",
+    "name": "Shadow Minimal Tee",
+    "price": 699,
+    "mrp": 949,
+    "category": "Minimal",
+    "fit": "Oversized",
+    "colors": [
+      "Black",
+      "Grey",
+      "Brown"
+    ],
+    "color": "Black",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "size": "L",
+    "fabric": "Premium Cotton",
+    "printType": "Minimal",
+    "inStock": true,
+    "rating": 4.7,
+    "reviews": 69,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#111",
+      "#777",
+      "#8d634b"
+    ],
+    "copy": "Low-key minimal tee with premium feel."
+  },
+  {
+    "id": "yellow-smile-tee",
+    "name": "Yellow Smile Tee",
+    "price": 699,
+    "mrp": 899,
+    "category": "Graphic",
+    "fit": "Regular Fit",
+    "colors": [
+      "Yellow",
+      "Black",
+      "Orange"
+    ],
+    "color": "Yellow",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "size": "M",
+    "fabric": "Cotton Blend",
+    "printType": "Graphic Print",
+    "inStock": true,
+    "rating": 4.8,
+    "reviews": 84,
+    "image": "assets/images/single-product-wave-no-logo.png",
+    "swatches": [
+      "#ffc20c",
+      "#111",
+      "#ff7132"
+    ],
+    "copy": "Bright graphic tee with upbeat energy."
+  }
+]

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Preserve the original page layout around the React mount node. */
+#root {
+  display: contents;
+}
